@@ -2,7 +2,7 @@
 
 namespace szefoski
 {
-nemespace tools
+namespace tools
 {
 
 #include <cxxabi.h>
