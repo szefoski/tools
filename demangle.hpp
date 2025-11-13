@@ -1,15 +1,15 @@
 #pragma once
 
-namespace szefoski
-{
-namespace tools
-{
-
 #include <cxxabi.h>
 #include <memory>
 #include <typeinfo>
 #include <iostream>
 #include <string_view>
+
+namespace szefoski
+{
+namespace tools
+{
 
 template<typename T>
 std::string demangle(const T &t) {
