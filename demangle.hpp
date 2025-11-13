@@ -1,5 +1,7 @@
 #pragma once
 
+#ifndef SZEFOSKI_HIDE
+
 #include <cxxabi.h>
 #include <memory>
 #include <typeinfo>
@@ -28,3 +30,5 @@ void demangle_print(const T &t, const std::string_view name = "Type") {
 
 }
 }
+
+#endif
