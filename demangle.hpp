@@ -31,4 +31,24 @@ void demangle_print(const T &t, const std::string_view name = "Type") {
 }
 }
 
+#else
+
+namespace szefoski
+{
+namespace tools
+{
+
+template<typename T>
+std::string demangle(const T &t) {
+    return {};
+}
+
+template<typename T>
+void demangle_print(const T &t, const std::string_view name = "Type") {
+}
+
+}
+}
+
+
 #endif
